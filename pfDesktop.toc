@@ -1,0 +1,17 @@
+## Interface: 11200
+## Title: |cff33ffccpf|cffffffffDesktop
+## Author: Shagu
+## Notes: An Ingame-Desktop Environment for World of Warcraft
+## Version: 0.1
+## SavedVariables: pfDesktop_Storage
+
+# libs
+libs\pfWM.lua
+
+# core
+pfDesktop.lua
+
+# modules
+modules\panel.lua
+modules\worldframe.lua
+modules\eventmonitor.lua
