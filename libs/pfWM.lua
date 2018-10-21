@@ -32,6 +32,8 @@ pfWM.config.fontsize = 10
 pfWM.config.fontsizemono = 10
 pfWM.config.fontopts = "NORMAL"
 
+pfWM.config.modkey = IsControlKeyDown
+
 local function MouseHandler(button, frame, force)
   if frame.max then return end
 
@@ -53,7 +55,7 @@ end
 local function AddEvent(self, event, func)
   self["_" .. event] = self[event]
   self[event] = function(a1,a2,a3,a4,a5,a6,a7,a8,a9)
-    
+
     local env = {}
     setmetatable(env, {__index = getfenv(0)})
     env.event = event
